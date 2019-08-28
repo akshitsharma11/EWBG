@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.ewaybillgenerator.SupportActivity">
+
+
+    <TextView
+        android:id="@+id/name_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nameSupportActivity"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nameOfSender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name_txtView"
+        android:layout_alignBottom="@+id/name_txtView"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/message_txtView"
+        android:hint="@string/enter_your_name_hereSupportActivity" />
+
+    <TextView
+        android:id="@+id/message_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name_txtView"
+        android:layout_below="@+id/nameOfSender"
+        android:layout_marginTop="16dp"
+        android:text="@string/messageSupportActivity"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/messageSendByUser"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/message_txtView"
+        android:gravity="start"
+        android:hint="@string/type_your_message_hereSupportActivity" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/messageSendByUser"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_btn_orange"
+        android:text="@string/sendSupportActivity"
+        android:onClick="sendQuery"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

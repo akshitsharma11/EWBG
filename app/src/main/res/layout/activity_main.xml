@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbg"
+
+    tools:context="com.example.student.ewaybillgenerator.MainActivity">
+
+    <TextView
+        android:id="@+id/main_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="142dp"
+        android:layout_marginStart="30dp"
+        android:text="Welcome\nTo The\nSimplest\nStepwise\nE-Way Bill\nGenerator"
+        android:textColor="@color/Brown"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/roundedbtn"
+        android:textAllCaps="false"
+        android:text="@string/click_to_continue"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
